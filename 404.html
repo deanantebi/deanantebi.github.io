@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>Run It</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Run It has moved</title>
 <script>
-  // The iPhone web app lives at /run-it/app/ as a single page. GitHub Pages has no rewrites, so a
-  // reload on one of its inner pages (e.g. /run-it/app/workouts) lands here: send it back to the app.
-  if (location.pathname.indexOf('/run-it/app/') === 0) location.replace('/run-it/app/' + location.search + location.hash);
-  else location.replace('/run-it/');
-</script></head>
-<body><a href="/run-it/">Run It</a></body></html>
+  // Old addresses under /run-it/… go to the same page on the new site; the old web app to its notice.
+  var p = location.pathname;
+  if (p.indexOf('/run-it/app/') === 0) location.replace('/run-it/app/');
+  else location.replace('https://run-it-app.github.io' + (p.indexOf('/run-it/') === 0 ? p.slice(7) : '/') + location.search + location.hash);
+</script></head><body><a href="https://run-it-app.github.io/">Run It</a></body></html>

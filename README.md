@@ -1,9 +1,6 @@
-# deanantebi.github.io
+# Moved
 
-GitHub Pages site for **Run It**: landing page, privacy policy and share-link page.
-
-- `/run-it/` — landing page
-- `/run-it/privacy/` — privacy policy (linked from the Intervals.icu OAuth app)
-- `/run-it/app/` — the iPhone web app (exported from run-app with `npm run build:web`, built with `scripts/build-web.sh` in run-app and copied from `dist/web/`). `404.html` sends reloads of its inner pages back to it.
-- `/run-it/w/#…` — opens a shared workout; the workout is in the URL fragment, never sent to the server
-- `.nojekyll` — lets Pages serve `.well-known/` (for Android App Links, added once the app's signing fingerprint is known)
+Run It now lives at https://run-it-app.github.io. The pages here only redirect old links:
+- Share links `/run-it/w/#…` keep their workout.
+- `/run-it/app/` shows how to re-add the web app at its new address. Its `version.json` makes copies
+  that are still open reload into that notice.

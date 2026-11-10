@@ -1,46 +1,25 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-    <!-- Home-screen app on iPhone (served at /run-it/app/). -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Run It" />
-    <!-- Invite only: keep the app out of search engines. -->
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="theme-color" content="#0B0D10" />
-    <link rel="apple-touch-icon" href="/run-it/app/apple-touch-icon.png" />
-    <link rel="manifest" href="/run-it/app/manifest.json" />
-    <title>Run It</title>
-    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
-    <style id="expo-reset">
-      /* These styles make the body full-height */
-      html,
-      body {
-        height: 100%;
-      }
-      /* These styles disable body scrolling if you are using <ScrollView> */
-      body {
-        overflow: hidden;
-        background-color: #0B0D10;
-      }
-      /* These styles make the root element full-height */
-      #root {
-        display: flex;
-        height: 100%;
-        flex: 1;
-      }
-    </style>
-  <link rel="icon" href="/run-it/app/favicon.ico"/></head>
-
-  <body>
-    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-    <noscript> You need to enable JavaScript to run this app. </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/run-it/app/_expo/static/js/web/__expo-metro-runtime-ed4c1cfa6193d76fc294130e42bd1916.js" defer></script><script src="/run-it/app/_expo/static/js/web/__common-8dcabdd26f8aa514381fdc9e620aa250.js" defer></script><script src="/run-it/app/_expo/static/js/web/entry-71b806bb909f8a499eba73329fbed08b.js" defer></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0B0D10"><title>Run It has moved</title>
+<style>
+  body { margin: 0; min-height: 100vh; background: #0B0D10; color: #F2F4F5; font: 16px/1.5 -apple-system, system-ui, sans-serif; display: flex; align-items: center; justify-content: center; }
+  main { max-width: 360px; padding: 32px 22px; }
+  h1 { font: 700 40px/1 system-ui, sans-serif; letter-spacing: .04em; margin: 0 0 14px; }
+  p { color: #B0B7BE; } b { color: #F2F4F5; }
+  a.btn { display: block; text-align: center; background: #C6FF3D; color: #0B0D10; text-decoration: none; font-weight: 700; letter-spacing: .08em; border-radius: 14px; padding: 15px; margin: 22px 0; }
+  ol { color: #B0B7BE; padding-left: 20px; }
+</style>
+<script>
+  // In a normal browser tab, just go. A Home Screen web app is tied to this address, so it shows how to re-add it.
+  var standalone = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
+  if (!standalone) location.replace('https://run-it-app.github.io/app/' + location.search + location.hash);
+</script></head><body><main>
+<h1>RUN IT HAS MOVED</h1>
+<p>Run It now lives at <b>run-it-app.github.io/app</b>. Your workouts are safe in Intervals.icu.</p>
+<a class="btn" href="https://run-it-app.github.io/app/">OPEN THE NEW ADDRESS</a>
+<ol>
+  <li>Open it in <b>Safari</b>, tap <b>Share → Add to Home Screen</b>.</li>
+  <li>Connect with Intervals.icu again (one tap).</li>
+  <li>Remove this old Run It icon from your Home Screen.</li>
+</ol>
+</main></body></html>
