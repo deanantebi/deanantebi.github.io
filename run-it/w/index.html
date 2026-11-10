@@ -8,8 +8,9 @@
 <h1 id="name" style="font-size:42px">RUN IT WORKOUT</h1>
 <div class="card"><pre id="text" dir="auto">This link doesn't contain a workout.</pre></div>
 <a class="btn" id="open" href="#">OPEN IN RUN IT</a>
+<a class="btn ghost" id="web" href="/run-it/app/">OPEN ON IPHONE</a>
 <button class="btn ghost" id="copy">COPY WORKOUT TEXT</button>
-<p style="margin-top:20px">Don't have Run It yet? It's in a private beta. Ask whoever sent you this link for an invite.</p>
+<p style="margin-top:20px">Android: “Open in Run It” opens the app. iPhone: “Open on iPhone” opens the web version (see <a href="/run-it/#iphone">how to add it to your Home Screen</a>). Don't have Run It yet? It's in a private beta. Ask whoever sent you this link for an invite.</p>
 <footer><a href="/run-it/">About Run It</a> · <a href="/run-it/privacy/">Privacy</a></footer>
 </main>
 <script>
@@ -28,6 +29,7 @@
       if (json.n) document.getElementById('name').textContent = json.n;
       if (json.f) document.getElementById('from').textContent = 'Shared by ' + json.f;
       document.getElementById('open').href = 'runit://share#' + raw;
+      document.getElementById('web').href = '/run-it/app/?share#' + raw;
       document.getElementById('copy').onclick = function () {
         navigator.clipboard.writeText(json.t || '').then(function () {
           document.getElementById('copy').textContent = 'COPIED ✓';
@@ -38,6 +40,7 @@
     }
   }
   show();
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent)) document.getElementById('open').style.display = 'none';
   window.addEventListener('hashchange', show);
 </script>
 </body></html>

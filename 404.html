@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Run It</title>
+<script>
+  // The iPhone web app lives at /run-it/app/ as a single page. GitHub Pages has no rewrites, so a
+  // reload on one of its inner pages (e.g. /run-it/app/workouts) lands here: send it back to the app.
+  if (location.pathname.indexOf('/run-it/app/') === 0) location.replace('/run-it/app/' + location.search + location.hash);
+  else location.replace('/run-it/');
+</script></head>
+<body><a href="/run-it/">Run It</a></body></html>
